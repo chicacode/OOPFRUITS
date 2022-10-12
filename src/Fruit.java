@@ -36,9 +36,9 @@ public class Fruit {
     }
 
     // This is the setter method.
-    public void setColor(String color) {
+    public String setColor(String color) {
 
-        this.color = color;
+        return this.color = color;
     }
 
     // This is the getter method.
@@ -48,9 +48,9 @@ public class Fruit {
     }
 
     // This is the setter method.
-    public void setWeight(double weight) {
+    public double setWeight(double weight) {
 
-        this.weight = weight;
+        return this.weight = weight;
     }
 
     // This is the getter method.
@@ -60,9 +60,9 @@ public class Fruit {
     }
 
     // This is the setter method.
-    public void setIsTasty(Boolean isTasty) {
+    public Boolean setIsTasty(Boolean isTasty) {
 
-        this.isTasty = isTasty;
+       return this.isTasty = isTasty;
     }
 
     // This is the getter method.
@@ -72,9 +72,9 @@ public class Fruit {
     }
 
     // This is the setter method.
-    public void setPrice(float price) {
+    public float setPrice(float price) {
 
-        this.price = price;
+        return this.price = price;
     }
 
     // This is the getter method.
@@ -84,9 +84,9 @@ public class Fruit {
     }
 
     // This is the setter method.
-    public void setQuantity(int quantity) {
+    public int setQuantity(int quantity) {
 
-        this.quantity = quantity;
+       return this.quantity = quantity;
     }
 
     public void AddQuantity(int number, float newPrice, double newWeight) {
