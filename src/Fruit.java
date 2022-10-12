@@ -2,13 +2,13 @@ public class Fruit {
 
     private String name;
     private String color;
-    private int weight;
+    private double weight;
     private Boolean isTasty;
     private float price;
     private int quantity;
 
     // constructor
-    public Fruit(String name, String color, int weight, boolean isTasty, float price, int quantity) {
+    public Fruit(String name, String color, double weight, boolean isTasty, float price, int quantity) {
         this.name = name;
         this.color = color;
         this.weight = weight;
@@ -42,13 +42,13 @@ public class Fruit {
     }
 
     // This is the getter method.
-    public int getWeight() {
+    public double getWeight() {
 
         return this.weight;
     }
 
     // This is the setter method.
-    public void setWeight(int weight) {
+    public void setWeight(double weight) {
 
         this.weight = weight;
     }
@@ -89,11 +89,17 @@ public class Fruit {
         this.quantity = quantity;
     }
 
-    public void AddQuantity(){
+    public void AddQuantity(int number, float newPrice, double newWeight) {
+        this.price += newPrice;
+        this.weight += newWeight;
         this.quantity = this.quantity + 1;
+
     }
 
-    public void removeQuantity(){
+    public void removeQuantity(int number, float newPrice, double newWeight) {
+        this.price -= newPrice;
+        this.weight -= newWeight;
+        this.quantity = this.quantity - 1;
 
     }
 
